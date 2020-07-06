@@ -27,10 +27,22 @@ aCrObAtIcS
 PISTA: Necesitaras una sentencia if dentro del for! 
 */
 class MixedCase {
-  public static void main(String[] args) {
+ public static void main(String[] args) {
     Scanner inp = new Scanner(System.in);
+    String str;
+    String cadena="";
     System.out.print("In:");
     String s = inp.nextLine();
     //write your code below
+    for(int i=0; i< s.length(); i++){
+      if(i%2==0){
+        str=s.toLowerCase();
+        cadena +=str.substring(i, i+1);
+      }else{
+        str=s.toUpperCase();
+        cadena +=str.substring(i, i+1);
+      }
+    }
+    System.out.println(cadena);
   }
 }
