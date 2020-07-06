@@ -32,7 +32,14 @@ class SumOddsRange {
     System.out.print("#2: ");
     int num2 = s.nextInt();
     //start below
-    
+    int suma=0; 
+
+    for(int i=num1; i <= num2; i++ ){
+      if(i%2!=0){
+        suma +=i;
+      }
+    }
+    System.out.println(suma);
     
   }
 }
